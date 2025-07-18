@@ -4,8 +4,11 @@
 export default {
   mutate: [
     'src/**/*.js',
+    'src/**/*.jsx',
     '!src/**/*.test.js',
-    '!src/**/__tests__/**/*.js'
+    '!src/**/*.test.jsx',
+    '!src/**/__tests__/**/*.js',
+    '!src/**/__tests__/**/*.jsx'
   ],
   testRunner: 'jest',
   jest: {
