@@ -14,7 +14,7 @@ describe('StatusMessage', () => {
     render(<StatusMessage status="error" message="Something went wrong." />);
     const msg = screen.getByRole('status');
     expect(msg).toHaveTextContent('Something went wrong.');
-    expect(msg).toHaveClass('status-message--error');
+    // expect(msg).toHaveClass('status-message--error'); // Intentionally removed for Stryker demo
   });
 
   it('renders info message with correct class', () => {

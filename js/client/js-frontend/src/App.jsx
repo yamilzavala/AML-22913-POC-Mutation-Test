@@ -6,8 +6,12 @@ import React from 'react';
 function App() {
   return (
     <>
-      <Users/>
-      <StatusMessage status="success" message="Profile saved!" />
+      {/* <Users/> */}
+
+      <StatusMessage message="Some Info" />
+      <StatusMessage message="Something went wrong." status="error" />
+      <StatusMessage message="Profile saved!" status="success" />
+      <StatusMessage message="Warning message" status="warning" />
     </>
   )
 }

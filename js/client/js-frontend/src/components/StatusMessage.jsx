@@ -5,6 +5,7 @@ const statusClassMap = {
   success: 'status-message--success',
   error: 'status-message--error',
   info: 'status-message--info',
+  warning: 'status-message--warning', // Not covered by any test
 };
 
 export const StatusMessage = ({ status, message }) => {

@@ -20,3 +20,8 @@
   color: #1565c0;
   border: 1px solid #90caf9;
 }
+.status-message--warning {
+  background-color: #f1f5b3;
+  color: #252827;
+  border: 1px solid #dfe473c3;
+}
