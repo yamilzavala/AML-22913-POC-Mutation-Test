@@ -17,13 +17,14 @@ describe('UserCardItem', () => {
     render(<UserCardItem user={mockUser} />);
 
     // Assert
-    // expect(screen.getByText('Alice Johnson')).toBeInTheDocument();
-    // expect(screen.getByText('alice@example.com')).toBeInTheDocument();
-    // expect(screen.getByText(/Username:/)).toBeInTheDocument();
-    // expect(screen.getByText(/Website:/)).toBeInTheDocument();
-    // expect(screen.getByText('alice.dev')).toBeInTheDocument();
+    expect(screen.getByText('Alice Johnson')).toBeInTheDocument();
+    expect(screen.getByText('alice@example.com')).toBeInTheDocument();
+    expect(screen.getByText(/Username:/)).toBeInTheDocument();
+    expect(screen.getByText(/Website:/)).toBeInTheDocument();
+    expect(screen.getByText('alice.dev')).toBeInTheDocument();
+    // ❌ Intentional forced error for demonstration purposes
     // expect(screen.getByText('Queried Email: ALICE@EXAMPLE.COM')).toBeInTheDocument();
-    // expect(screen.getByText('A')).toBeInTheDocument(); // avatar circle
+    expect(screen.getByText('A')).toBeInTheDocument(); // avatar circle
   });
 
   test('does not render uppercased email note when user.email is empty', () => {
